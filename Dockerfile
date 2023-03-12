@@ -1,5 +1,5 @@
 ARG GOLANG_VERSION="1.19.1"
-
+EXPOSE 1080
 FROM golang:$GOLANG_VERSION-alpine as builder
 RUN apk --no-cache add tzdata
 WORKDIR /go/src/github.com/serjs/socks5
